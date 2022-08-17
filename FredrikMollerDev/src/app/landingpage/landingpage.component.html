@@ -1,0 +1,211 @@
+<div style="height: 100vh">
+  <div
+    class="d-flex justify-content-center align-items-center landing-background"
+  >
+    <mat-card class="image-card d-flex flex-column align-items-center p-4">
+      <mat-card-content>
+        <img
+          mat-card-lg-image
+          class="my-image"
+          src="../assets/images/bildisPNG.PNG"
+          alt="Angular material Card"
+        />
+      </mat-card-content>
+      <mat-card-header>
+        <mat-card-title>Fredrik Möller</mat-card-title>
+        <mat-card-subtitle>Software developer</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-footer>
+        <ul class="socials d-flex justify-content-between">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/fredrik-m%C3%B6llerdev/"
+              rel="noreferrer noopener"
+              ><i class="fa fa-brands fa-linkedin fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/fredrik.molleer/"
+              rel="noreferrer noopener"
+              ><i class="fa fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+  <div
+    class="mt-2 about-me d-flex justify-content-center flex-column align-items-center"
+  >
+    <div
+      class="d-flex justify-content-center flex-column align-items-center"
+      style="max-width: 57rem"
+    >
+      <h1>About me</h1>
+      <p>
+        Hi I'm Fredrik Möller, a curious developer that always seek to gain new
+        knowledge through amazing projects of different tech. Maybe I can be
+        part of your journey?
+      </p>
+    </div>
+    <div id="personal" class="d-flex justify-content-evenly">
+      <div id="details">
+        <h2>Personal Details</h2>
+        <table style="width: 100%">
+          <tr>
+            <th>Birthdate:</th>
+            <td>1995-03-10</td>
+          </tr>
+          <tr>
+            <th>Phone:</th>
+            <td>073 391 77 23</td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td>fredrik.moller1324@gmail.com</td>
+          </tr>
+          <tr>
+            <th>Address:</th>
+            <td>Lundgatan, 416 61 Göteborg</td>
+          </tr>
+          <tr>
+            <th>Job status:</th>
+            <td>Employed</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="interests">
+        <h2>My interests</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <i class="fa fa-solid fa-headphones fa-2x"></i>
+            MUSIC
+          </div>
+          <div class="grid-item">
+            <fa-icon [icon]="faCoffee" size="2x"></fa-icon>
+            COFFEE
+          </div>
+          <div class="grid-item">
+            <i class="fa fa-solid fa-gamepad fa-2x"></i>
+            GAMES
+          </div>
+          <div class="grid-item">
+            <i class="fa fa-brands fa-windows fa-2x"></i>
+            MICROSOFT
+          </div>
+          <div class="grid-item">
+            <fa-icon [icon]="faDog" size="2x"></fa-icon>
+            DOGS
+          </div>
+          <div class="grid-item">
+            <fa-icon [icon]="faDumbell" size="2x"></fa-icon>
+            GYM
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="skills" class="d-flex flex-column align-items-center">
+  <h1>Skills</h1>
+  <div id="skill-display" class="d-flex">
+    <div style="max-width: 30rem">
+      <p>
+        To the right you can view some of my technologies I've worked with
+        professionally. Other areas I'd like to learn more about is ML and
+        game development in Unity. To be honest, IoT, VR and AR would be cool to
+        learn more about as well!
+      </p>
+    </div>
+    <table style="border-spacing: 0.5rem; border-collapse: separate">
+      <tr>
+        <th>C#</th>
+        <td>
+          <div class="skill-dots">
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>SQL</th>
+        <td>
+          <div class="skill-dots">
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-unmark"></div>
+            <div class="circle-unmark"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Javascript</th>
+        <td>
+          <div class="skill-dots">
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-unmark"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>HTML & CSS</th>
+        <td>
+          <div class="skill-dots">
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-unmark"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Angular</th>
+        <td>
+          <div class="skill-dots">
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-unmark"></div>
+            <div class="circle-unmark"></div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Git</th>
+        <td>
+          <div class="skill-dots">
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-unmark"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>TFS</th>
+        <td>
+          <div class="skill-dots">
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-mark"></div>
+            <div class="circle-unmark"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <div class="header d-flex justify-content-center">
+    <h1 class="mt-4">My DevBlog</h1>
+  </div>
+  <div class="grid-container" *ngIf="blogPosts$ | async as blogPosts">
+    <div
+      class="grid-item blog-posts-container"
+      *ngFor="let post of blogPosts.items"
+    >
+      <div class="content-container">
+        <img [src]="post.fields.featuredImage.fields.file.url" alt="" />
+        <h2>{{ post.fields.title }}</h2>
+        <p class="author">Author: {{ post.fields.author }}</p>
+        <p class="summary">{{ post.fields.summary }}</p>
+      </div>
+      <a class="btn btn-primary" [routerLink]="['/blogpost', post.sys.id]"
+        >Read More</a
+      >
+    </div>
+  </div>
+</div>

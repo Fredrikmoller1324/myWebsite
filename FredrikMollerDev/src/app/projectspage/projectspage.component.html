@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <div class="header d-flex justify-content-center">
+    <h1 class="mt-4">My Projects</h1>
+  </div>
+  <div class="grid-container" *ngIf="projects$ | async as projects">
+    <div
+      class="grid-item blog-posts-container"
+      *ngFor="let project of projects.items"
+    >
+      <div class="content-container">
+        <div>
+          <h2>{{ project.fields.title }}</h2>
+          <img [src]="project.fields.featuredImage.fields.file.url" alt="" />
+        </div>
+
+        <div class="test">
+          <p class="summary">
+            <markdown ngPreserveWhitespaces>
+              {{ _returnHtmlFromRichText(project.fields.summary) }}
+            </markdown>
+          </p>
+          <a
+            class="btn btn-primary githubButton"
+            href="{{ project.fields.url }}"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Github</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
