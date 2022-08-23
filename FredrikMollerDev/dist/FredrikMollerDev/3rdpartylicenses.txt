@@ -114,6 +114,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+@contentful/rich-text-types
+MIT
+
 @fortawesome/angular-fontawesome
 MIT
 MIT License
