@@ -29,9 +29,10 @@ h1,h2,p,a{
 
 .grid-container {
     display: grid;
-    gap: 50px;
+    gap: 25px;
     grid-template-columns: auto auto auto;
     justify-content: center;
+    margin: 0.5rem;
   }
   
   .summary{
@@ -52,10 +53,10 @@ h1,h2,p,a{
    }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1710px) {
     .grid-container {
         display: grid;
-        gap: 50px;
+        gap: 25px;
         grid-template-columns: auto ;
         justify-content: center;
         margin: 2rem;

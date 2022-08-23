@@ -3,6 +3,15 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { BlogService } from '../services/blog.service';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { BLOCKS } from '@contentful/rich-text-types';
+
+
+const options = {
+  renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node: any) =>
+          `<img class="img-fluid" src="https://${node.data.target.fields.file.url}"/>`
+  },
+};
 
 @Component({
   selector: 'app-blogpost',
@@ -16,6 +25,8 @@ export class BlogpostComponent implements OnInit {
   ) {}
 
   blogPost$: Observable<any> | undefined;
+
+ 
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
@@ -33,6 +44,6 @@ export class BlogpostComponent implements OnInit {
     ) {
       return '<p>Error</p>';
     }
-    return documentToHtmlString(richText);
+    return documentToHtmlString(richText,options);
   }
 }
