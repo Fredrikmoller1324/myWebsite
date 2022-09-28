@@ -2,7 +2,7 @@ p{
   padding: 20px;
 }
 .image-card {
-  min-width: 25rem;
+  min-width: 20rem;
   background: #c3c3c3;
   color: #191919;
 }
@@ -16,7 +16,7 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 40%;
+  height: 20rem;
 }
 
 .socials {
@@ -105,19 +105,35 @@ th{
     }
 }
 
+#skills{
+  margin-bottom: 2rem;
+  color: #c3c3c3;
+}
+
+@media(max-height:700px) {
+  #skills{
+    margin-top: 15rem;
+    color: #c3c3c3;
+  }
+}
+
+@media(max-height:500px) {
+  #skills{
+    margin-top: 25rem;
+    color: #c3c3c3;
+  }
+}
+
 @media (max-width: 840px) {
 
   #skills{
-    margin-top: 15rem;
+    margin-top: 30rem;
+    color: #c3c3c3;
   }
   #skill-display {
     flex-direction: column;
     padding: 1rem;
   }
-}
-
-#skills{
-  color: #c3c3c3;
 }
 
 .circle-mark {
